@@ -1,0 +1,87 @@
+@mixin abs-pos__top-left($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+
+  transform: translate(-$left, -$top);
+}
+
+@mixin icomoon-content($content) {
+  content: $content;
+  font-family: "icomoon";
+}
+
+ul li {
+  list-style: none;
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  color: white;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background: url("/image/header-fon.png") no-repeat center;
+  background-size: cover;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+.header-nav {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+}
+.nav {
+  a {
+    padding: 0 25px;
+    font-family: "FocusMedium";
+  }
+}
+
+$width_height-picture: 30px;
+.social {
+  a {
+    width: $width_height-picture;
+    height: $width_height-picture;
+
+    $i: 1;
+    @each $code in "\f099", "\f167", "\f09a" {
+      &:before:nth-child(#{$i}) {
+        @include icomoon-content($code);
+        @include abs-pos__top-left(50%, 50%);
+      }
+      $i: $i + 1;
+    }
+  }
+}
+
+.header__content-title {
+  max-width: 800px;
+  margin: 0 auto;
+
+  font-family: MarckScriptRegular;
+  font-size: 90px;
+  text-align: center;
+}

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+ul li {
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  color: white;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background: url("/image/header-fon.png") no-repeat center;
+  background-size: cover;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.nav a {
+  padding: 0 25px;
+  font-family: "FocusMedium";
+}
+
+.social a {
+  width: 30px;
+  height: 30px;
+}
+.social a:before:nth-child(1) {
+  content: "";
+  font-family: "icomoon";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.social a:before:nth-child(2) {
+  content: "";
+  font-family: "icomoon";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.social a:before:nth-child(3) {
+  content: "";
+  font-family: "icomoon";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__content-title {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: MarckScriptRegular;
+  font-size: 90px;
+  text-align: center;
+}
