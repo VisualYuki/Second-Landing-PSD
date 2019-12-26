@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="/css/media.css" />
 
+    <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
       href="https://i.icomoon.io/public/temp/ccc231880f/UntitledProject/style.css"
@@ -19,9 +20,9 @@
         <div class="header__inner">
           <div class="header__top">
             <div class="logo">
-              <img src="./image/logo.png" alt="" srcset="" />
+              <a href="#"><img src="./image/logo.png" alt="" srcset=""/></a>
             </div>
-            <nav class="header-nav nav">
+            <nav class="header__nav nav">
               <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -30,6 +31,7 @@
                 <li><a href="#">Reviews</a></li>
                 <li><a href="#">Reservations</a></li>
               </ul>
+              <div class="icon-menu"></div>
             </nav>
             <div class="social">
               <a href=""></a>
@@ -38,20 +40,41 @@
             </div>
           </div>
           <div class="header__content">
-            <div class="header__content-title">
+            <h1 class="header__content-title">
               The right ingredients for the right food
-            </div>
-            <div class="header__content-btn">
-              <div class="header__content-btn_left">
+            </h1>
+            <p class="header__content-btn">
+              <a href="#" class="header__content-btn_left">
                 Book A Table
-              </div>
-              <div class="header__content-btn_right">
+              </a>
+              <a href="#" class="header__content-btn_right">
                 Call Now
-              </div>
-            </div>
+              </a>
+            </p>
           </div>
         </div>
       </div>
     </header>
+
+    <main>
+      <section class="about">
+        <div class="container">
+          <div class="about-inner">
+            <h2 class="title">
+              discover Our Story
+            </h2>
+            <p class="text">
+              If you’ve been to one of our restaurants, you’ve seen – and tasted
+              – what keeps our customers coming back for more. Perfect materials
+              and freshly baked food, delicious Lambda cakes, muffins, and
+              gourmet coffees make us hard to resist! Stop in today and check us
+              out!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
