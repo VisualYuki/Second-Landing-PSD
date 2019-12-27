@@ -4,8 +4,29 @@
 }
 
 @font-face {
+  src: url("../fonts/Focus-Regular.ttf");
+  font-family: "FocusRegular";
+}
+
+@font-face {
   src: url("../fonts/Marck-Script-Regular.ttf");
   font-family: "MarckScriptRegular";
+}
+
+@font-face {
+  src: url("../fonts/ofont.ru_Lato.ttf");
+  font-family: "LatoRegular";
+}
+
+@font-face {
+  src: url("../fonts/ofont.ru_Yeseva\ One.ttf");
+  font-family: "YesevaOne";
+}
+
+@media (max-width: 1200px) {
+  .ingredients__left-column {
+    display: none;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -85,6 +106,12 @@
 @media (max-width: 400px) {
   .header__content-title {
     font-size: 40px;
-    /* max-width: 650px; */
+  }
+
+  .images {
+    justify-content: space-around;
+  }
+  .images img:last-child {
+    display: none;
   }
 }
