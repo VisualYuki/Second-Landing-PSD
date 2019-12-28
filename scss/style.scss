@@ -400,6 +400,30 @@ $width_height-picture: 30px;
   color: #1a1f3b;
 }
 
+.reservations {
+  background: url("/image/reservations-fon.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.reservations__inner {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 0;
+}
+
+.reservations__images {
+  display: flex;
+  justify-content: space-between;
+  // max-width: 600px;
+}
+.reservations__images img:first-child {
+  margin-right: 40px;
+}
+
+.reservations__images img:last-child {
+  position: absolute;
+  left: -200px;
+}
 footer {
   background: url("/image/footer-fon.png") no-repeat center;
   background-size: cover;
