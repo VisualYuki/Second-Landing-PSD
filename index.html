@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <div class="header__inner">
           <div class="header__top">
@@ -20,12 +20,12 @@
             </div>
             <nav class="header__nav nav">
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Ingredients</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Reservations</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#reservations">Reservations</a></li>
               </ul>
               <div class="icon-menu"></div>
             </nav>
@@ -50,11 +50,11 @@
           </div>
         </div>
       </div>
-    </header> -->
+    </header>
     <!-- /HEADER -->
     <main>
       <!-- ABOUT -->
-      <!-- <section class="about">
+      <section id="about" class="about">
         <div class="container">
           <div class="about-inner">
             <h2 class="title">
@@ -69,11 +69,11 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- /ABOUT -->
 
-      <!-- IGREDIENTS -->
-      <!-- <section class="ingredients">
+      <!-- INGREDIENTS -->
+      <section id="ingredients" class="ingredients">
         <div class="container">
           <div class="ingredients__inner">
             <div class="ingredients__left-column">
@@ -98,11 +98,11 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- IGREDIENTS -->
 
       <!-- MENU -->
-      <!-- <div class="menu">
+      <div id="menu" class="menu">
         <div class="container">
           <div class="menu__inner">
             <div class="menu__left-column">
@@ -248,10 +248,10 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <!-- REVIEWS -->
-      <!-- <section class="reviews">
+      <section id="reviews" class="reviews">
         <div class="container">
           <div class="reviews__inner">
             <img src="./image/review-title.png" />
@@ -274,11 +274,11 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- /REVIEWS -->
 
       <!-- reservations  -->
-      <section class="reservations">
+      <section id="reservations" class="reservations">
         <div class="container">
           <div class="reservations__inner">
             <div class="reservations__images">
@@ -287,13 +287,14 @@
               <img src="/image/reservations-left-0.png" alt="" srcset="" />
             </div>
             <div class="reservations__content">
-              <h2 class="title">
+              <h2 class="title reservations__title">
                 Just the right food
               </h2>
-              <p class="text">
+              <p class="text reservations__text">
                 If you’ve been to one of our restaurants, you’ve seen – and
                 tasted – what keeps our customers coming back for more. Perfect
                 materials and freshly baked food.
+                <img src="./image/reservations-right.png" alt="" srcset="" />
               </p>
               <form class="reservations__form">
                 <div class="form__items">
@@ -308,12 +309,7 @@
                   </div>
                   <div class="form__item">
                     <label for="date">Date</label>
-                    <input
-                      id="date"
-                      placeholder="your a"
-                      type="month"
-                      value="00.00.2000"
-                    />
+                    <input id="date" placeholder="your a" type="date" />
                   </div>
                   <div class="form__item">
                     <label for="party-number">Party number</label>
@@ -326,7 +322,7 @@
                   </div>
                 </div>
                 <div class="form__btn">
-                  Book now!
+                  <a href="#">Book now!</a>
                 </div>
               </form>
             </div>
@@ -340,7 +336,7 @@
     </main>
 
     <!-- FOOTER -->
-    <!-- <footer>
+    <footer>
       <div class="container">
         <div class="footer__inner">
           <div class="footer__items">
@@ -376,7 +372,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- /FOOTER -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

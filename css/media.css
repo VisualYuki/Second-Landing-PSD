@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  src: url("../fonts/Focus-Italic.ttf");
+  font-family: "FocusItalic";
+}
+
+@font-face {
   src: url("../fonts/Marck-Script-Regular.ttf");
   font-family: "MarckScriptRegular";
 }
@@ -35,10 +40,18 @@
     top: 15%;
     right: 0;
   }
+
+  .reservations__text img {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
   .ingredients__left-column {
+    display: none;
+  }
+
+  .reservations__images img:nth-child(2) {
     display: none;
   }
 }
@@ -53,6 +66,13 @@
 
   .reviews__inner {
     padding: 50px 0;
+  }
+  .reservations__text img {
+    display: none;
+  }
+
+  .reservations__inner {
+    justify-content: space-around;
   }
 }
 @media (max-width: 900px) {
@@ -71,6 +91,19 @@
   }
   .footer__items {
     justify-content: space-around;
+  }
+
+  .reservations__images {
+    display: none;
+  }
+
+  .header {
+    padding-bottom: 50px;
+  }
+
+  .ingredients__right-column {
+    padding-top: 70px;
+    padding-bottom: 40px;
   }
 }
 
@@ -126,6 +159,10 @@
     font-size: 40px;
     transform: translate(-50%, -50%);
   }
+
+  .reservations__text {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 651px) {
@@ -144,6 +181,12 @@
   }
   .header__content-btn_left {
     margin-bottom: 20px;
+  }
+
+  .form__items {
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
